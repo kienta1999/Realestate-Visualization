@@ -11,3 +11,7 @@ body {
     margin: 3px;
     float:left;
 }
+
+.state_name, .state_price {
+    font-size: 1.5em;
+}
