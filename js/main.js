@@ -29,21 +29,32 @@ function init() {
 
 init();
 
+
+function myFunction() {
+    myVar = setTimeout(showPage, 1500);
+}
+  
+function showPage() {
+    document.getElementById("legend").style.display = "block";
+}
+
 function draw_map(values) {
     const [houseData, topoData] = values;
     
-    let width = 1000;
+    let width = 900;
     let height = 600;
 
-    let color_range = ["#CCE5FF", "#99ccff", "#66B2FF", "#3399FF", "#0080FF", "#0066CC"];
+    let color_range = ["#D3E4F3", "#BDD8EC", "#A0CAE3", "#7EB8DA", "#5DA4D0", "#408EC4", "#1460A7", "#0A488D", "#08306B"];
     let domain = [d3.min(houseData, (d) => d.MedianValue), d3.max(houseData, (d) => d.MedianValue)]
 
     let colorScale = d3.scaleQuantile()
                     .domain(domain)
                     .range(color_range);
 
+    console.log(colorScale(397820));
 
-    let projection = d3.geoAlbersUsa().translate([width / 2, height / 2]).scale(1250);
+
+    let projection = d3.geoAlbersUsa().translate([width / 2, height / 2]).scale(1000);
     
     let path = d3.geoPath().projection(projection); 
 
@@ -66,13 +77,13 @@ function draw_map(values) {
         .attr("stroke", "#333")
         .attr("stroke-width", "1.5")
         .attr("fill", (d) => {
-            return "#EEE";
+            return colorScale(d.properties.MedianValue);
         })
         .attr("d", path)
         .on("mouseover", function(d) {
             d3.select(this).attr("fill", "orange")
         })
         .on("mouseout", function(d) {
-            d3.select(this).attr("fill", "#eee")
-        });
+            return d3.select(this).attr("fill", d => colorScale(d.properties.MedianValue));
+        })
 }

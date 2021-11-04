@@ -49873,7 +49873,8 @@
                ],
                 "id":2,
                 "properties": {
-                    "name": "Alaska"
+                    "name": "Alaska",
+                    "MedianValue": 300889
                 }
             },
             {
@@ -49923,7 +49924,8 @@
                ],
                 "id":15,
                 "properties": {
-                    "name": "Hawaii"
+                    "name": "Hawaii",
+                    "MedianValue": 636451
                 }
             },
             {
@@ -50069,7 +50071,8 @@
                ],
                 "id":1,
                 "properties": {
-                    "name": "Alabama"
+                    "name": "Alabama",
+                    "MedianValue": 138975
                 }
             },
             {
@@ -50148,7 +50151,8 @@
                ],
                 "id":5,
                 "properties": {
-                    "name": "Arkansas"
+                    "name": "Arkansas",
+                    "MedianValue": 128101
                 }
             },
             {
@@ -50184,7 +50188,8 @@
                ],
                 "id":4,
                 "properties": {
-                    "name": "Arizona"
+                    "name": "Arizona",
+                    "MedianValue": 268765
                 }
             },
             {
@@ -50283,7 +50288,8 @@
                ],
                 "id":6,
                 "properties": {
-                    "name": "California"
+                    "name": "California",
+                    "MedianValue": 554886
                 }
             },
             {
@@ -50346,7 +50352,8 @@
                ],
                 "id":8,
                 "properties": {
-                    "name": "Colorado"
+                    "name": "Colorado",
+                    "MedianValue": 397820
                 }
             },
             {
@@ -50381,7 +50388,8 @@
                ],
                 "id":9,
                 "properties": {
-                    "name": "Connecticut"
+                    "name": "Connecticut",
+                    "MedianValue": 255555
                 }
             },
             {
@@ -50398,7 +50406,8 @@
                ],
                 "id":11,
                 "properties": {
-                    "name": "District of Columbia"
+                    "name": "District of Columbia",
+                    "MedianValue": 626911
                 }
             },
             {
@@ -50429,7 +50438,8 @@
                ],
                 "id":10,
                 "properties": {
-                    "name": "Delaware"
+                    "name": "Delaware",
+                    "MedianValue": 254108
                 }
             },
             {
@@ -50705,7 +50715,8 @@
                ],
                 "id":12,
                 "properties": {
-                    "name": "Florida"
+                    "name": "Florida",
+                    "MedianValue": 245169
                 }
             },
             {
@@ -50860,7 +50871,8 @@
                ],
                 "id":13,
                 "properties": {
-                    "name": "Georgia"
+                    "name": "Georgia",
+                    "MedianValue": 201294
                 }
             },
             {
@@ -50948,7 +50960,8 @@
                ],
                 "id":19,
                 "properties": {
-                    "name": "Iowa"
+                    "name": "Iowa",
+                    "MedianValue": 152885
                 }
             },
             {
@@ -51010,7 +51023,8 @@
                ],
                 "id":16,
                 "properties": {
-                    "name": "Idaho"
+                    "name": "Idaho",
+                    "MedianValue": 285982
                 }
             },
             {
@@ -51112,7 +51126,8 @@
                ],
                 "id":17,
                 "properties": {
-                    "name": "Illinois"
+                    "name": "Illinois",
+                    "MedianValue": 202675
                 }
             },
             {
@@ -51204,7 +51219,8 @@
                ],
                 "id":18,
                 "properties": {
-                    "name": "Indiana"
+                    "name": "Indiana",
+                    "MedianValue": 155640
                 }
             },
             {
@@ -51297,7 +51313,8 @@
                ],
                 "id":20,
                 "properties": {
-                    "name": "Kansas"
+                    "name": "Kansas",
+                    "MedianValue": 150657
                 }
             },
             {
@@ -51414,7 +51431,8 @@
                ],
                 "id":21,
                 "properties": {
-                    "name": "Kentucky"
+                    "name": "Kentucky",
+                    "MedianValue": 146871
                 }
             },
             {
@@ -51535,7 +51553,8 @@
                ],
                 "id":22,
                 "properties": {
-                    "name": "Louisiana"
+                    "name": "Louisiana",
+                    "MedianValue": 166565
                 }
             },
             {
@@ -51598,7 +51617,8 @@
                ],
                 "id":25,
                 "properties": {
-                    "name": "Massachusetts"
+                    "name": "Massachusetts",
+                    "MedianValue": 422856
                 }
             },
             {
@@ -51691,7 +51711,8 @@
                ],
                 "id":24,
                 "properties": {
-                    "name": "Maryland"
+                    "name": "Maryland",
+                    "MedianValue": 308041
                 }
             },
             {
@@ -51742,7 +51763,8 @@
                ],
                 "id":23,
                 "properties": {
-                    "name": "Maine"
+                    "name": "Maine",
+                    "MedianValue": 242316
                 }
             },
             {
@@ -51881,7 +51903,8 @@
                ],
                 "id":26,
                 "properties": {
-                    "name": "Michigan"
+                    "name": "Michigan",
+                    "MedianValue": 173277
                 }
             },
             {
@@ -51979,7 +52002,8 @@
                ],
                 "id":27,
                 "properties": {
-                    "name": "Minnesota"
+                    "name": "Minnesota",
+                    "MedianValue": 256857
                 }
             },
             {
@@ -52096,7 +52120,8 @@
                ],
                 "id":29,
                 "properties": {
-                    "name": "Missouri"
+                    "name": "Missouri",
+                    "MedianValue": 162464
                 }
             },
             {
@@ -52178,7 +52203,8 @@
                ],
                 "id":28,
                 "properties": {
-                    "name": "Mississippi"
+                    "name": "Mississippi",
+                    "MedianValue": 126502
                 }
             },
             {
@@ -52238,7 +52264,8 @@
                ],
                 "id":30,
                 "properties": {
-                    "name": "Montana"
+                    "name": "Montana",
+                    "MedianValue": 277801
                 }
             },
             {
@@ -52401,7 +52428,8 @@
                ],
                 "id":37,
                 "properties": {
-                    "name": "North Carolina"
+                    "name": "North Carolina",
+                    "MedianValue": 202215
                 }
             },
             {
@@ -52452,7 +52480,8 @@
                ],
                 "id":38,
                 "properties": {
-                    "name": "North Dakota"
+                    "name": "North Dakota",
+                    "MedianValue": 235012
                 }
             },
             {
@@ -52539,7 +52568,8 @@
                ],
                 "id":31,
                 "properties": {
-                    "name": "Nebraska"
+                    "name": "Nebraska",
+                    "MedianValue": 175884
                 }
             },
             {
@@ -52577,7 +52607,8 @@
                ],
                 "id":33,
                 "properties": {
-                    "name": "New Hampshire"
+                    "name": "New Hampshire",
+                    "MedianValue": 290163
                 }
             },
             {
@@ -52633,7 +52664,8 @@
                ],
                 "id":34,
                 "properties": {
-                    "name": "New Jersey"
+                    "name": "New Jersey",
+                    "MedianValue": 335607
                 }
             },
             {
@@ -52690,7 +52722,8 @@
                ],
                 "id":35,
                 "properties": {
-                    "name": "New Mexico"
+                    "name": "New Mexico",
+                    "MedianValue": 203675
                 }
             },
             {
@@ -52737,7 +52770,8 @@
                ],
                 "id":32,
                 "properties": {
-                    "name": "Nevada"
+                    "name": "Nevada",
+                    "MedianValue": 301753
                 }
             },
             {
@@ -52844,7 +52878,8 @@
                ],
                 "id":36,
                 "properties": {
-                    "name": "New York"
+                    "name": "New York",
+                    "MedianValue": 321934
                 }
             },
             {
@@ -52941,7 +52976,8 @@
                ],
                 "id":39,
                 "properties": {
-                    "name": "Ohio"
+                    "name": "Ohio",
+                    "MedianValue": 150374
                 }
             },
             {
@@ -53034,7 +53070,8 @@
                ],
                 "id":40,
                 "properties": {
-                    "name": "Oklahoma"
+                    "name": "Oklahoma",
+                    "MedianValue": 128934
                 }
             },
             {
@@ -53105,7 +53142,8 @@
                ],
                 "id":41,
                 "properties": {
-                    "name": "Oregon"
+                    "name": "Oregon",
+                    "MedianValue": 361970
                 }
             },
             {
@@ -53187,7 +53225,8 @@
                ],
                 "id":42,
                 "properties": {
-                    "name": "Pennsylvania"
+                    "name": "Pennsylvania",
+                    "MedianValue": 194603
                 }
             },
             {
@@ -53223,7 +53262,8 @@
                ],
                 "id":44,
                 "properties": {
-                    "name": "Rhode Island"
+                    "name": "Rhode Island",
+                    "MedianValue": 300808
                 }
             },
             {
@@ -53332,7 +53372,8 @@
                ],
                 "id":45,
                 "properties": {
-                    "name": "South Carolina"
+                    "name": "South Carolina",
+                    "MedianValue": 185749
                 }
             },
             {
@@ -53401,7 +53442,8 @@
                ],
                 "id":46,
                 "properties": {
-                    "name": "South Dakota"
+                    "name": "South Dakota",
+                    "MedianValue": 205567
                 }
             },
             {
@@ -53511,7 +53553,8 @@
                ],
                 "id":47,
                 "properties": {
-                    "name": "Tennessee"
+                    "name": "Tennessee",
+                    "MedianValue": 185922
                 }
             },
             {
@@ -53715,7 +53758,8 @@
                ],
                 "id":48,
                 "properties": {
-                    "name": "Texas"
+                    "name": "Texas",
+                    "MedianValue": 207301
                 }
             },
             {
@@ -53761,7 +53805,8 @@
                ],
                 "id":49,
                 "properties": {
-                    "name": "Utah"
+                    "name": "Utah",
+                    "MedianValue": 348376
                 }
             },
             {
@@ -53932,7 +53977,8 @@
                ],
                 "id":51,
                 "properties": {
-                    "name": "Virginia"
+                    "name": "Virginia",
+                    "MedianValue": 285229
                 }
             },
             {
@@ -53966,7 +54012,8 @@
                ],
                 "id":50,
                 "properties": {
-                    "name": "Vermont"
+                    "name": "Vermont",
+                    "MedianValue": 254234
                 }
             },
             {
@@ -54074,7 +54121,8 @@
                ],
                 "id":53,
                 "properties": {
-                    "name": "Washington"
+                    "name": "Washington",
+                    "MedianValue": 409228
                 }
             },
             {
@@ -54169,7 +54217,8 @@
                ],
                 "id":55,
                 "properties": {
-                    "name": "Wisconsin"
+                    "name": "Wisconsin",
+                    "MedianValue": 202029
                 }
             },
             {
@@ -54250,7 +54299,8 @@
                ],
                 "id":54,
                 "properties": {
-                    "name": "West Virginia"
+                    "name": "West Virginia",
+                    "MedianValue": 108236
                 }
             },
             {
@@ -54304,7 +54354,8 @@
                ],
                 "id":56,
                 "properties": {
-                    "name": "Wyoming"
+                    "name": "Wyoming",
+                    "MedianValue": 250890
                 }
             },
             {
