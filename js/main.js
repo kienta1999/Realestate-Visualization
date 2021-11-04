@@ -11,6 +11,7 @@ let opts = {
     className: 'spinner',
 };
 
+
 var files = ["data/data.json"];
 
 function init() {
@@ -39,10 +40,10 @@ function showPage() {
 }
 
 function draw_map(values) {
+    let width = 900,
+        height = 550;
+
     const [houseData, topoData] = values;
-    
-    let width = 900;
-    let height = 550;
 
     let color_range = ["#D3E4F3", "#BDD8EC", "#A0CAE3", "#7EB8DA", "#5DA4D0", "#408EC4", "#1460A7", "#0A488D", "#08306B"];
     let domain = [d3.min(houseData, (d) => d.MedianValue), d3.max(houseData, (d) => d.MedianValue)]
@@ -62,14 +63,11 @@ function draw_map(values) {
 
     let us_states = topojson.feature(topoData, topoData.objects.states).features;
 
-    svg.append("g")
-        .attr("class", "states")
-
-    svg.selectAll("path")
+    svg.selectAll(".state")
         .data(us_states)
         .enter()
         .append("path")
-        .attr("class", d => d.properties.name)
+        .attr("class", d => `state ${d.properties.name}`)
         .attr("id", d => d.properties.MedianValue)
         .attr("stroke", "#333")
         .attr("stroke-width", "1.5")
@@ -101,4 +99,15 @@ function draw_map(values) {
             svg.selectAll('.state_price').remove();
             return d3.select(this).attr("fill", d => colorScale(d.properties.MedianValue));
         })
+
+    let us_counties = topojson.feature(topoData, topoData.objects.counties).features;
+    svg.selectAll(".county")
+        .data(us_counties)
+        .enter()
+        .append("path")
+        .attr("class", "county")
+        .attr("stroke", "#333")
+        .attr("stroke-width", "0.2")
+        .attr("fill", "none")
+        .attr("d", path)
 }
