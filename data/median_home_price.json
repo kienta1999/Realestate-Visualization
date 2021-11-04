@@ -1,0 +1,206 @@
+[
+    {
+        "State": "Mississippi",
+        "MedianValue": 126502
+    },
+    {
+        "State": "West Virginia",
+        "MedianValue": 108236
+    },
+    {
+        "State": "Arkansas",
+        "MedianValue": 128101
+    },
+    {
+        "State": "Oklahoma",
+        "MedianValue": 128934
+    },
+    {
+        "State": "Kentucky",
+        "MedianValue": 146871
+    },
+    {
+        "State": "Indiana",
+        "MedianValue": 155640
+    },
+    {
+        "State": "Alabama",
+        "MedianValue": 138975
+    },
+    {
+        "State": "Ohio",
+        "MedianValue": 150374
+    },
+    {
+        "State": "Iowa",
+        "MedianValue": 152885
+    },
+    {
+        "State": "Kansas",
+        "MedianValue": 150657
+    },
+    {
+        "State": "Michigan",
+        "MedianValue": 173277
+    },
+    {
+        "State": "Nebraska",
+        "MedianValue": 175884
+    },
+    {
+        "State": "Missouri",
+        "MedianValue": 162464
+    },
+    {
+        "State": "South Carolina",
+        "MedianValue": 185749
+    },
+    {
+        "State": "Louisiana",
+        "MedianValue": 166565
+    },
+    {
+        "State": "South Dakota",
+        "MedianValue": 205567
+    },
+    {
+        "State": "Tennessee",
+        "MedianValue": 185922
+    },
+    {
+        "State": "New Mexico",
+        "MedianValue": 203675
+    },
+    {
+        "State": "Texas",
+        "MedianValue": 207301
+    },
+    {
+        "State": "North Carolina",
+        "MedianValue": 202215
+    },
+    {
+        "State": "Georgia",
+        "MedianValue": 201294
+    },
+    {
+        "State": "Pennsylvania",
+        "MedianValue": 194603
+    },
+    {
+        "State": "Wisconsin",
+        "MedianValue": 202029
+    },
+    {
+        "State": "Maine",
+        "MedianValue": 242316
+    },
+    {
+        "State": "North Dakota",
+        "MedianValue": 235012
+    },
+    {
+        "State": "Illinois",
+        "MedianValue": 202675
+    },
+    {
+        "State": "Idaho",
+        "MedianValue": 285982
+    },
+    {
+        "State": "Florida",
+        "MedianValue": 245169
+    },
+    {
+        "State": "Wyoming",
+        "MedianValue": 250890
+    },
+    {
+        "State": "Minnesota",
+        "MedianValue": 256857
+    },
+    {
+        "State": "Arizona",
+        "MedianValue": 268765
+    },
+    {
+        "State": "Vermont",
+        "MedianValue": 254234
+    },
+    {
+        "State": "Montana",
+        "MedianValue": 277801
+    },
+    {
+        "State": "Delaware",
+        "MedianValue": 254108
+    },
+    {
+        "State": "New Hampshire",
+        "MedianValue": 290163
+    },
+    {
+        "State": "Rhode Island",
+        "MedianValue": 300808
+    },
+    {
+        "State": "Nevada",
+        "MedianValue": 301753
+    },
+    {
+        "State": "Alaska",
+        "MedianValue": 300889
+    },
+    {
+        "State": "Virginia",
+        "MedianValue": 285229
+    },
+    {
+        "State": "Connecticut",
+        "MedianValue": 255555
+    },
+    {
+        "State": "Utah",
+        "MedianValue": 348376
+    },
+    {
+        "State": "Oregon",
+        "MedianValue": 361970
+    },
+    {
+        "State": "New York",
+        "MedianValue": 321934
+    },
+    {
+        "State": "Maryland",
+        "MedianValue": 308041
+    },
+    {
+        "State": "New Jersey",
+        "MedianValue": 335607
+    },
+    {
+        "State": "District of Columbia",
+        "MedianValue": 626911
+    },
+    {
+        "State": "Washington",
+        "MedianValue": 409228
+    },
+    {
+        "State": "Colorado",
+        "MedianValue": 397820
+    },
+    {
+        "State": "Massachusetts",
+        "MedianValue": 422856
+    },
+    {
+        "State": "California",
+        "MedianValue": 554886
+    },
+    {
+        "State": "Hawaii",
+        "MedianValue": 636451
+    }
+]
