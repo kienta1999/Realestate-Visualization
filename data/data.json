@@ -1,0 +1,1351 @@
+{
+    "status": {
+      "version": "1.0.0",
+      "code": 0,
+      "msg": "SuccessWithResult",
+      "total": 5249,
+      "page": 1,
+      "pagesize": 10
+    },
+    "property": [
+  {
+        "identifier": {
+          "obPropId": 20520211856021,
+          "fips": "56021",
+          "apn": "00013006702030",
+          "attomId": 205202118
+        },
+        "lot": {
+          "lotSize1": 32.58
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "WY",
+          "line1": "2800 W LINCOLNWAY",
+          "line2": "CHEYENNE, WY 82001",
+          "locality": "Cheyenne",
+          "matchCode": "ExaStr",
+          "oneLine": "2800 W LINCOLNWAY, CHEYENNE, WY 82001",
+          "postal1": "82001",
+          "postal2": "3302",
+          "postal3": "H060"
+        },
+        "location": {
+          "accuracy": "Street",
+          "elevation": 0,
+          "latitude": "41.116708",
+          "longitude": "-104.855526",
+          "distance": 0,
+          "geoid": "CO56021, CS5690825, DB5601980, PL5613900, SB0000130742, SB0000130746, SB0000130765, ZI82001"
+        },
+        "summary": {
+          "propclass": "\"Hotel, Motel\"",
+          "propsubtype": "COMMERCIAL",
+          "proptype": "HOTEL",
+          "yearbuilt": 1965,
+          "propLandUse": "HOTEL",
+          "propIndicator": "23"
+        },
+        "building": {
+          "size": {
+            "universalsize": 187406
+          },
+          "rooms": {
+            "bathstotal": 0,
+            "beds": 0
+          }
+        },
+        "vintage": {
+          "lastModified": "2018-1-27",
+          "pubDate": "2019-8-11"
+        },
+        "sale": {
+          "salesearchdate": "2014-5-16",
+          "saleTransDate": "2014-5-16",
+          "amount": {
+            "saleamt": 0,
+            "salerecdate": "2014-5-23",
+            "saledisclosuretype": 2,
+            "saledocnum": "0000638454",
+            "saletranstype": "Resale"
+          },
+          "calculation": {
+            "priceperbed": 0,
+            "pricepersizeunit": 0
+          }
+        }
+      },
+      {
+        "identifier": {
+          "obPropId": 20467040656021,
+          "fips": "56021",
+          "apn": "00013006711000",
+          "attomId": 204670406
+        },
+        "lot": {
+          "lotSize1": 21
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "WY",
+          "line1": "2800 W LINCOLNWAY",
+          "line2": "CHEYENNE, WY 82001",
+          "locality": "Cheyenne",
+          "matchCode": "ExaStr",
+          "oneLine": "2800 W LINCOLNWAY, CHEYENNE, WY 82001",
+          "postal1": "82001",
+          "postal2": "3302",
+          "postal3": "H060"
+        },
+        "location": {
+          "accuracy": "Street",
+          "elevation": 0,
+          "latitude": "41.116708",
+          "longitude": "-104.855526",
+          "distance": 0,
+          "geoid": "CO56021, CS5690825, DB5601980, PL5613900, SB0000130742, SB0000130746, SB0000130765, ZI82001"
+        },
+        "summary": {
+          "propclass": "\"Hotel, Motel\"",
+          "propsubtype": "COMMERCIAL",
+          "proptype": "HOTEL",
+          "yearbuilt": 1965,
+          "propLandUse": "HOTEL",
+          "propIndicator": "23"
+        },
+        "building": {
+          "size": {
+            "universalsize": 105756
+          },
+          "rooms": {
+            "bathstotal": 0,
+            "beds": 0
+          }
+        },
+        "vintage": {
+          "lastModified": "2018-1-27",
+          "pubDate": "2019-8-11"
+        },
+        "sale": {
+          "salesearchdate": "2014-5-16",
+          "saleTransDate": "2014-5-16",
+          "amount": {
+            "saleamt": 0,
+            "salerecdate": "2014-5-23",
+            "saledisclosuretype": 2,
+            "saledocnum": "0000638454",
+            "saletranstype": "Resale"
+          },
+          "calculation": {
+            "priceperbed": 0,
+            "pricepersizeunit": 0
+          }
+        }
+      },
+      {
+        "identifier": {
+          "obPropId": 18841592756021,
+          "fips": "56021",
+          "apn": "16003001700010",
+          "attomId": 188415927
+        },
+        "lot": {
+          "lotSize1": 0.1625
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "WY",
+          "line1": "301 W 5TH ST",
+          "line2": "CHEYENNE, WY 82007",
+          "locality": "Cheyenne",
+          "matchCode": "ExaZip",
+          "oneLine": "301 W 5TH ST, CHEYENNE, WY 82007",
+          "postal1": "82007"
+        },
+        "location": {
+          "accuracy": "Zip5",
+          "elevation": 0,
+          "latitude": "41.107000",
+          "longitude": "-104.799900",
+          "distance": 0,
+          "geoid": "CO56021, CS5690715, DB5601980, PL5613900, PL5629300, SB0000130740, SB0000130745, SB0000130772, ZI82001"
+        },
+        "summary": {
+          "propclass": "Single Family Residence / Townhouse",
+          "propsubtype": "HOUSE",
+          "proptype": "SFR",
+          "yearbuilt": 1957,
+          "propLandUse": "SFR",
+          "propIndicator": "10"
+        },
+        "building": {
+          "size": {
+            "universalsize": 2701
+          },
+          "rooms": {
+            "bathstotal": 5,
+            "beds": 0
+          }
+        },
+        "vintage": {
+          "lastModified": "2019-12-13",
+          "pubDate": "2019-12-13"
+        },
+        "sale": {
+          "salesearchdate": "2019-11-8",
+          "saleTransDate": "2019-11-8",
+          "amount": {
+            "saleamt": 573113,
+            "salecode": "Estimated Sale Price",
+            "salerecdate": "2019-11-13",
+            "saledisclosuretype": 2,
+            "saledocnum": "0000765674",
+            "saletranstype": "Resale"
+          },
+          "calculation": {
+            "priceperbed": 0,
+            "pricepersizeunit": 212
+          }
+        }
+      },
+      {
+        "identifier": {
+          "obPropId": 19717939556021,
+          "fips": "56021",
+          "apn": "00013006824030",
+          "attomId": 197179395
+        },
+        "lot": {
+          "lotSize1": 8.78
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "WY",
+          "line1": "1784 OTTO RD",
+          "line2": "CHEYENNE, WY 82001",
+          "locality": "Cheyenne",
+          "matchCode": "ExaStr",
+          "oneLine": "1784 OTTO RD, CHEYENNE, WY 82001",
+          "postal1": "82001",
+          "postal2": "9502",
+          "postal3": "H060"
+        },
+        "location": {
+          "accuracy": "Street",
+          "elevation": 0,
+          "latitude": "41.086857",
+          "longitude": "-104.947796",
+          "distance": 0,
+          "geoid": "CO56021, CS5690825, DB5601980, SB0000130742, SB0000130746, SB0000130765, ZI82001"
+        },
+        "summary": {
+          "propclass": "Single Family Residence / Townhouse",
+          "propsubtype": "HOUSE",
+          "proptype": "SFR",
+          "yearbuilt": 1970,
+          "propLandUse": "SFR",
+          "propIndicator": "10"
+        },
+        "building": {
+          "size": {
+            "universalsize": 700
+          },
+          "rooms": {
+            "bathstotal": 1,
+            "beds": 0
+          }
+        },
+        "vintage": {
+          "lastModified": "2018-1-27",
+          "pubDate": "2019-8-11"
+        },
+        "sale": {
+          "salesearchdate": "2017-3-10",
+          "saleTransDate": "2017-3-10",
+          "amount": {
+            "saleamt": 0,
+            "salerecdate": "2017-3-10",
+            "saledisclosuretype": 2,
+            "saledocnum": "0000703738",
+            "saletranstype": "Resale"
+          },
+          "calculation": {
+            "priceperbed": 0,
+            "pricepersizeunit": 0
+          }
+        }
+      },
+      {
+        "identifier": {
+          "obPropId": 2578492156021,
+          "fips": "56021",
+          "apn": "12325000200050",
+          "attomId": 25784921
+        },
+        "lot": {
+          "lotSize1": 0.1725
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "WY",
+          "line1": "220 SAVANNAH DR",
+          "line2": "CHEYENNE, WY 82001",
+          "locality": "Cheyenne",
+          "matchCode": "ExaStr",
+          "oneLine": "220 SAVANNAH DR, CHEYENNE, WY 82001",
+          "postal1": "82001",
+          "postal2": "6836",
+          "postal3": "C047"
+        },
+        "location": {
+          "accuracy": "Street",
+          "elevation": 0,
+          "latitude": "41.129470",
+          "longitude": "-104.752386",
+          "distance": 0,
+          "geoid": "CO56021, CS5690715, DB5601980, PL5613900, RS0004788538, SB0000130740, SB0000130745, SB0000130749, ZI82001"
+        },
+        "summary": {
+          "propclass": "Single Family Residence / Townhouse",
+          "propsubtype": "HOUSE",
+          "proptype": "SFR",
+          "yearbuilt": 1993,
+          "propLandUse": "SFR",
+          "propIndicator": "10"
+        },
+        "building": {
+          "size": {
+            "universalsize": 1206
+          },
+          "rooms": {
+            "bathstotal": 3,
+            "beds": 0
+          }
+        },
+        "vintage": {
+          "lastModified": "2018-8-3",
+          "pubDate": "2019-8-11"
+        },
+        "sale": {
+          "salesearchdate": "2015-12-10",
+          "saleTransDate": "2015-12-10",
+          "amount": {
+            "saleamt": 250000,
+            "salecode": "Estimated Sale Price",
+            "salerecdate": "2015-12-14",
+            "saledisclosuretype": 2,
+            "saledocnum": "0000675447",
+            "saletranstype": "Resale"
+          },
+          "calculation": {
+            "priceperbed": 0,
+            "pricepersizeunit": 207
+          }
+        }
+      },
+      {
+        "identifier": {
+          "obPropId": 21600795056021,
+          "fips": "56021",
+          "apn": "00013006733000",
+          "attomId": 216007950
+        },
+        "lot": {
+          "lotSize1": 8
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "WY",
+          "line1": "6621 SPEER RD",
+          "line2": "CHEYENNE, WY 82007",
+          "locality": "Cheyenne",
+          "matchCode": "ExaStr",
+          "oneLine": "6621 SPEER RD, CHEYENNE, WY 82007",
+          "postal1": "82007",
+          "postal2": "1939",
+          "postal3": "R001"
+        },
+        "location": {
+          "accuracy": "Street",
+          "elevation": 0,
+          "latitude": "41.058092",
+          "longitude": "-104.905427",
+          "distance": 0,
+          "geoid": "CO56021, CS5690825, DB5601980, SB0000130740, SB0000130745, SB0000130771, ZI82001"
+        },
+        "summary": {
+          "propclass": "Utilities",
+          "propsubtype": "COMMERCIAL",
+          "proptype": "TELEPHONE FACILITY",
+          "yearbuilt": 1988,
+          "propLandUse": "TELEPHONE FACILITY",
+          "propIndicator": "54"
+        },
+        "building": {
+          "size": {
+            "universalsize": 1936
+          },
+          "rooms": {
+            "bathstotal": 0,
+            "beds": 0
+          }
+        },
+        "vintage": {
+          "lastModified": "2020-8-14",
+          "pubDate": "2020-8-14"
+        },
+        "sale": {
+          "salesearchdate": "2020-6-2",
+          "saleTransDate": "2020-6-2",
+          "amount": {
+            "saleamt": 0,
+            "salerecdate": "2020-6-4",
+            "saledisclosuretype": 2,
+            "saledocnum": "0000779688",
+            "saletranstype": "Resale"
+          },
+          "calculation": {
+            "priceperbed": 0,
+            "pricepersizeunit": 0
+          }
+        }
+      },
+      {
+        "identifier": {
+          "obPropId": 18692911756021,
+          "fips": "56021",
+          "apn": "18628005700080",
+          "attomId": 186929117
+        },
+        "lot": {
+          "lotSize1": 0.1092
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "WY",
+          "line1": "4945 ATLANTIC DR",
+          "line2": "CHEYENNE, WY 82001",
+          "locality": "Cheyenne",
+          "matchCode": "ExaStr",
+          "oneLine": "4945 ATLANTIC DR, CHEYENNE, WY 82001",
+          "postal1": "82001",
+          "postal2": "6974",
+          "postal3": "C047"
+        },
+        "location": {
+          "accuracy": "Street",
+          "elevation": 0,
+          "latitude": "41.129638",
+          "longitude": "-104.750212",
+          "distance": 0,
+          "geoid": "CO56021, CS5690715, DB5601980, PL5613900, RS0004935700, SB0000130740, SB0000130745, SB0000130749, ZI82001"
+        },
+        "summary": {
+          "propclass": "Single Family Residence / Townhouse",
+          "propsubtype": "MISCELLANEOUS INDUSTRIAL",
+          "proptype": "TOWNHOUSE/ROWHOUSE",
+          "yearbuilt": 1983,
+          "propLandUse": "TOWNHOUSE/ROWHOUSE",
+          "propIndicator": "10"
+        },
+        "building": {
+          "size": {
+            "universalsize": 1040
+          },
+          "rooms": {
+            "bathstotal": 2,
+            "beds": 0
+          }
+        },
+        "vintage": {
+          "lastModified": "2019-8-2",
+          "pubDate": "2019-8-11"
+        },
+        "sale": {
+          "salesearchdate": "2019-7-3",
+          "saleTransDate": "2019-7-3",
+          "amount": {
+            "saleamt": 225525,
+            "salecode": "Estimated Sale Price",
+            "salerecdate": "2019-7-8",
+            "saledisclosuretype": 2,
+            "saledocnum": "0000756784",
+            "saletranstype": "Resale"
+          },
+          "calculation": {
+            "priceperbed": 0,
+            "pricepersizeunit": 217
+          }
+        }
+      },
+      {
+        "identifier": {
+          "obPropId": 19570484256021,
+          "fips": "56021",
+          "apn": "18628005700020",
+          "attomId": 195704842
+        },
+        "lot": {
+          "lotSize1": 0.1952
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "WY",
+          "line1": "4909 ATLANTIC DR",
+          "line2": "CHEYENNE, WY 82001",
+          "locality": "Cheyenne",
+          "matchCode": "ExaStr",
+          "oneLine": "4909 ATLANTIC DR, CHEYENNE, WY 82001",
+          "postal1": "82001",
+          "postal2": "6973",
+          "postal3": "C047"
+        },
+        "location": {
+          "accuracy": "Street",
+          "elevation": 0,
+          "latitude": "41.129641",
+          "longitude": "-104.750959",
+          "distance": 0,
+          "geoid": "CO56021, CS5690715, DB5601980, PL5613900, RS0004935700, SB0000130740, SB0000130745, SB0000130749, ZI82001"
+        },
+        "summary": {
+          "propclass": "\"Duplex, Triplex, Quadplex)\"",
+          "propsubtype": "MISCELLANEOUS INDUSTRIAL",
+          "proptype": "DUPLEX",
+          "yearbuilt": 1982,
+          "propLandUse": "DUPLEX",
+          "propIndicator": "21"
+        },
+        "building": {
+          "size": {
+            "universalsize": 2080
+          },
+          "rooms": {
+            "bathstotal": 2,
+            "beds": 0
+          }
+        },
+        "vintage": {
+          "lastModified": "2018-1-27",
+          "pubDate": "2018-1-27"
+        },
+        "sale": {
+          "salesearchdate": "2015-8-24",
+          "saleTransDate": "2015-8-24",
+          "amount": {
+            "saleamt": 0,
+            "salerecdate": "2015-9-3",
+            "saledisclosuretype": 2,
+            "saledocnum": "0000668883",
+            "saletranstype": "Nominal - Non/Arms Length Sale"
+          },
+          "calculation": {
+            "priceperbed": 0,
+            "pricepersizeunit": 0
+          }
+        }
+      },
+      {
+        "identifier": {
+          "obPropId": 4481365056021,
+          "fips": "56021",
+          "apn": "18720000100010",
+          "attomId": 44813650
+        },
+        "lot": {
+          "lotSize1": 0.53
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "WY",
+          "line1": "2500 W LINCOLNWAY",
+          "line2": "CHEYENNE, WY 82001",
+          "locality": "Cheyenne",
+          "matchCode": "ExaStr",
+          "oneLine": "2500 W LINCOLNWAY, CHEYENNE, WY 82001",
+          "postal1": "82001",
+          "postal2": "3301",
+          "postal3": "H060"
+        },
+        "location": {
+          "accuracy": "Street",
+          "elevation": 0,
+          "latitude": "41.119870",
+          "longitude": "-104.848096",
+          "distance": 0,
+          "geoid": "CO56021, CS5690715, DB5601980, PL5613900, SB0000130742, SB0000130746, SB0000130765, ZI82001"
+        },
+        "summary": {
+          "propclass": "Retail",
+          "propsubtype": "COMMERCIAL",
+          "proptype": "SERVICE STATION",
+          "yearbuilt": 1966,
+          "propLandUse": "SERVICE STATION",
+          "propIndicator": "25"
+        },
+        "building": {
+          "size": {
+            "universalsize": 1616
+          },
+          "rooms": {
+            "bathstotal": 0,
+            "beds": 0
+          }
+        },
+        "vintage": {
+          "lastModified": "2018-1-27",
+          "pubDate": "2019-8-11"
+        },
+        "sale": {
+          "salesearchdate": "2014-12-23",
+          "saleTransDate": "2014-12-23",
+          "amount": {
+            "saleamt": 0,
+            "salerecdate": "2015-1-5",
+            "saledisclosuretype": 2,
+            "saledocnum": "0000652357",
+            "saletranstype": "Resale"
+          },
+          "calculation": {
+            "priceperbed": 0,
+            "pricepersizeunit": 0
+          }
+        }
+      },
+      {
+        "identifier": {
+          "obPropId": 14875637956021,
+          "fips": "56021",
+          "apn": "00013006911000",
+          "attomId": 148756379
+        },
+        "lot": {
+          "lotSize1": 960
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "WY",
+          "line1": "1176 OTTO RD",
+          "line2": "CHEYENNE, WY 82007",
+          "locality": "Cheyenne",
+          "matchCode": "ExaStr",
+          "oneLine": "1176 OTTO RD, CHEYENNE, WY 82007",
+          "postal1": "82001"
+        },
+        "location": {
+          "accuracy": "Street",
+          "elevation": 0,
+          "latitude": "41.099910",
+          "longitude": "-105.061376",
+          "distance": 0,
+          "geoid": "CO56021, CS5690825, DB5601980, SB0000130742, SB0000130746, SB0000130765, ZI82001"
+        },
+        "summary": {
+          "propclass": "Agricultural",
+          "propsubtype": "RESIDENTIAL",
+          "proptype": "FARMS",
+          "yearbuilt": 1910,
+          "propLandUse": "FARMS",
+          "propIndicator": "70"
+        },
+        "building": {
+          "size": {
+            "universalsize": 0
+          },
+          "rooms": {
+            "bathstotal": 0,
+            "beds": 0
+          }
+        },
+        "vintage": {
+          "lastModified": "2018-1-27",
+          "pubDate": "2019-8-11"
+        },
+        "sale": {
+          "salesearchdate": "2015-3-27",
+          "saleTransDate": "2015-3-27",
+          "amount": {
+            "saleamt": 0,
+            "salerecdate": "2015-3-27",
+            "saledisclosuretype": 2,
+            "saledocnum": "0000657607",
+            "saletranstype": "Resale"
+          },
+          "calculation": {
+            "priceperbed": 0,
+            "pricepersizeunit": 0
+          }
+        }
+      },
+      {
+        "identifier": {
+          "obPropId": 21600796756021,
+          "fips": "56021",
+          "apn": "11001035700022",
+          "attomId": 216007967
+        },
+        "lot": {
+          "lotSize1": 0.2
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "WY",
+          "line1": "1719 CENTRAL AVE",
+          "line2": "CHEYENNE, WY 82001",
+          "locality": "Cheyenne",
+          "matchCode": "ExaStr",
+          "oneLine": "1719 CENTRAL AVE, CHEYENNE, WY 82001",
+          "postal1": "82001",
+          "postal2": "4533",
+          "postal3": "C015"
+        },
+        "location": {
+          "accuracy": "Street",
+          "elevation": 0,
+          "latitude": "41.134259",
+          "longitude": "-104.814711",
+          "distance": 0,
+          "geoid": "CO56021, CS5690715, DB5601980, PL5613900, SB0000130743, SB0000130744, SB0000130747, ZI82001"
+        },
+        "summary": {
+          "propclass": "Parking",
+          "propsubtype": "COMMERCIAL",
+          "proptype": "PARKING STRUCTURE",
+          "yearbuilt": 1964,
+          "propLandUse": "PARKING STRUCTURE",
+          "propIndicator": "31"
+        },
+        "building": {
+          "size": {
+            "universalsize": 8243
+          },
+          "rooms": {
+            "bathstotal": 0,
+            "beds": 0
+          }
+        },
+        "vintage": {
+          "lastModified": "2018-1-27",
+          "pubDate": "2019-8-11"
+        },
+        "sale": {
+          "salesearchdate": "2014-12-1",
+          "saleTransDate": "2014-12-1",
+          "amount": {
+            "saleamt": 0,
+            "salerecdate": "2014-12-8",
+            "saledisclosuretype": 2,
+            "saledocnum": "0000650804",
+            "saletranstype": "Resale"
+          },
+          "calculation": {
+            "priceperbed": 0,
+            "pricepersizeunit": 0
+          }
+        }
+      },
+      {
+        "identifier": {
+          "obPropId": 19540301156021,
+          "fips": "56021",
+          "apn": "16770000100021",
+          "attomId": 195403011
+        },
+        "lot": {
+          "lotSize1": 2.1129
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "WY",
+          "line1": "1001 DUNN AVE",
+          "line2": "CHEYENNE, WY 82001",
+          "locality": "Cheyenne",
+          "matchCode": "ExaStr",
+          "oneLine": "1001 DUNN AVE, CHEYENNE, WY 82001",
+          "postal1": "82001",
+          "postal2": "4846",
+          "postal3": "C024"
+        },
+        "location": {
+          "accuracy": "Street",
+          "elevation": 0,
+          "latitude": "41.133980",
+          "longitude": "-104.796443",
+          "distance": 0,
+          "geoid": "CO56021, CS5690715, DB5601980, PL5613900, SB0000130743, SB0000130744, SB0000130747, ZI82001"
+        },
+        "summary": {
+          "propclass": "Commercial",
+          "propsubtype": "COMMERCIAL",
+          "proptype": "WAREHOUSE",
+          "yearbuilt": 1981,
+          "propLandUse": "WAREHOUSE",
+          "propIndicator": "20"
+        },
+        "building": {
+          "size": {
+            "universalsize": 10961
+          },
+          "rooms": {
+            "bathstotal": 0,
+            "beds": 0
+          }
+        },
+        "vintage": {
+          "lastModified": "2018-1-27",
+          "pubDate": "2019-8-11"
+        },
+        "sale": {
+          "salesearchdate": "2014-10-16",
+          "saleTransDate": "2014-10-16",
+          "amount": {
+            "saleamt": 0,
+            "salerecdate": "2014-10-17",
+            "saledisclosuretype": 2,
+            "saledocnum": "0000647526",
+            "saletranstype": "Resale"
+          },
+          "calculation": {
+            "priceperbed": 0,
+            "pricepersizeunit": 0
+          }
+        }
+      },
+      {
+        "identifier": {
+          "obPropId": 3507488256021,
+          "fips": "56021",
+          "apn": "14232030200000",
+          "attomId": 35074882
+        },
+        "lot": {
+          "lotSize1": 0
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "WY",
+          "line1": "109 E 17TH ST STE 302",
+          "line2": "CHEYENNE, WY 82001",
+          "locality": "Cheyenne",
+          "matchCode": "ExaStr",
+          "oneLine": "109 E 17TH ST STE 302, CHEYENNE, WY 82001",
+          "postal1": "82001",
+          "postal2": "4589",
+          "postal3": "C003"
+        },
+        "location": {
+          "accuracy": "Street",
+          "elevation": 0,
+          "latitude": "41.133946",
+          "longitude": "-104.814554",
+          "distance": 0,
+          "geoid": "CO56021, CS5690715, DB5601980, PL5613900, SB0000130743, SB0000130744, SB0000130747, ZI82001"
+        },
+        "summary": {
+          "propclass": "Office Building",
+          "propsubtype": "COMMERCIAL",
+          "proptype": "OFFICE BUILDING",
+          "yearbuilt": 1924,
+          "propLandUse": "OFFICE BUILDING",
+          "propIndicator": "27"
+        },
+        "building": {
+          "size": {
+            "universalsize": 25467
+          },
+          "rooms": {
+            "bathstotal": 0,
+            "beds": 0
+          }
+        },
+        "vintage": {
+          "lastModified": "2020-10-23",
+          "pubDate": "2020-10-23"
+        },
+        "sale": {
+          "salesearchdate": "2020-9-17",
+          "saleTransDate": "2020-9-17",
+          "amount": {
+            "saleamt": 0,
+            "salerecdate": "2020-9-21",
+            "saledisclosuretype": 2,
+            "saledocnum": "0000788928",
+            "saletranstype": "New Construction"
+          },
+          "calculation": {
+            "priceperbed": 0,
+            "pricepersizeunit": 0
+          }
+        }
+      },
+      {
+        "identifier": {
+          "obPropId": 3366320256021,
+          "fips": "56021",
+          "apn": "11001038700050",
+          "attomId": 33663202
+        },
+        "lot": {
+          "lotSize1": 0.8
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "WY",
+          "line1": "216 E LINCOLNWAY",
+          "line2": "CHEYENNE, WY 82001",
+          "locality": "Cheyenne",
+          "matchCode": "ExaStr",
+          "oneLine": "216 E LINCOLNWAY, CHEYENNE, WY 82001",
+          "postal1": "82001",
+          "postal2": "4504",
+          "postal3": "C003"
+        },
+        "location": {
+          "accuracy": "Street",
+          "elevation": 0,
+          "latitude": "41.133828",
+          "longitude": "-104.812745",
+          "distance": 0,
+          "geoid": "CO56021, CS5690715, DB5601980, PL5613900, SB0000130743, SB0000130744, SB0000130747, ZI82001"
+        },
+        "summary": {
+          "propclass": "Service (general public)",
+          "propsubtype": "COMMERCIAL",
+          "proptype": "RESTAURANT BUILDING",
+          "yearbuilt": 1985,
+          "propLandUse": "RESTAURANT BUILDING",
+          "propIndicator": "26"
+        },
+        "building": {
+          "size": {
+            "universalsize": 4057
+          },
+          "rooms": {
+            "bathstotal": 0,
+            "beds": 0
+          }
+        },
+        "vintage": {
+          "lastModified": "2018-1-27",
+          "pubDate": "2019-8-11"
+        },
+        "sale": {
+          "salesearchdate": "2015-6-20",
+          "saleTransDate": "2015-6-20",
+          "amount": {
+            "saleamt": 0,
+            "salerecdate": "2015-6-25",
+            "saledisclosuretype": 2,
+            "saledocnum": "0000664000",
+            "saletranstype": "Resale"
+          },
+          "calculation": {
+            "priceperbed": 0,
+            "pricepersizeunit": 0
+          }
+        }
+      },
+      {
+        "identifier": {
+          "obPropId": 20685818456021,
+          "fips": "56021",
+          "apn": "17012000300120",
+          "attomId": 206858184
+        },
+        "lot": {
+          "lotSize1": 0.241
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "WY",
+          "line1": "118 E LINCOLNWAY",
+          "line2": "CHEYENNE, WY 82001",
+          "locality": "Cheyenne",
+          "matchCode": "ExaStr",
+          "oneLine": "118 E LINCOLNWAY, CHEYENNE, WY 82001",
+          "postal1": "82001"
+        },
+        "location": {
+          "accuracy": "Street",
+          "elevation": 0,
+          "latitude": "41.133322",
+          "longitude": "-104.814039",
+          "distance": 0,
+          "geoid": "CO56021, CS5690715, DB5601980, PL5613900, SB0000130743, SB0000130744, SB0000130747, ZI82001"
+        },
+        "summary": {
+          "propclass": "Industrial",
+          "propsubtype": "COMMERCIAL",
+          "proptype": "WAREHOUSE",
+          "yearbuilt": 1952,
+          "propLandUse": "WAREHOUSE",
+          "propIndicator": "50"
+        },
+        "building": {
+          "size": {
+            "universalsize": 1421
+          },
+          "rooms": {
+            "bathstotal": 0,
+            "beds": 0
+          }
+        },
+        "vintage": {
+          "lastModified": "2018-1-27",
+          "pubDate": "2019-8-11"
+        },
+        "sale": {
+          "salesearchdate": "2017-2-24",
+          "saleTransDate": "2017-2-24",
+          "amount": {
+            "saleamt": 0,
+            "salerecdate": "2017-2-27",
+            "saledisclosuretype": 2,
+            "saledocnum": "0000702937",
+            "saletranstype": "Resale"
+          },
+          "calculation": {
+            "priceperbed": 0,
+            "pricepersizeunit": 0
+          }
+        }
+      },
+      {
+        "identifier": {
+          "obPropId": 15006083056021,
+          "fips": "56021",
+          "apn": "11001038800023",
+          "apnOrig": "11001038800023",
+          "attomId": 150060830
+        },
+        "lot": {
+          "lotSize1": 0.2284
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "WY",
+          "line1": "1615 CENTRAL AVE",
+          "line2": "CHEYENNE, WY 82001",
+          "locality": "Cheyenne",
+          "matchCode": "ExaStr",
+          "oneLine": "1615 CENTRAL AVE, CHEYENNE, WY 82001",
+          "postal1": "82001",
+          "postal2": "4531",
+          "postal3": "C015"
+        },
+        "location": {
+          "accuracy": "Street",
+          "elevation": 0,
+          "latitude": "41.133314",
+          "longitude": "-104.814109",
+          "distance": 0,
+          "geoid": "CO56021, CS5690715, DB5601980, PL5613900, SB0000130743, SB0000130744, SB0000130747, ZI82001"
+        },
+        "summary": {
+          "propclass": "Commercial",
+          "propsubtype": "COMMERCIAL",
+          "proptype": "COMMON AREA",
+          "yearbuilt": 1928,
+          "propLandUse": "COMMON AREA",
+          "propIndicator": "20"
+        },
+        "building": {
+          "size": {
+            "universalsize": 13080
+          },
+          "rooms": {
+            "bathstotal": 0,
+            "beds": 0
+          }
+        },
+        "vintage": {
+          "lastModified": "2018-7-16",
+          "pubDate": "2019-8-11"
+        },
+        "sale": {
+          "salesearchdate": "2018-5-11",
+          "saleTransDate": "2018-5-11",
+          "amount": {
+            "saleamt": 0,
+            "salerecdate": "2018-5-11",
+            "saledisclosuretype": 2,
+            "saledocnum": "0000731125",
+            "saletranstype": "Resale"
+          },
+          "calculation": {
+            "priceperbed": 0,
+            "pricepersizeunit": 0
+          }
+        }
+      },
+      {
+        "identifier": {
+          "obPropId": 19065845556021,
+          "fips": "56021",
+          "apn": "11001038800060",
+          "attomId": 190658455
+        },
+        "lot": {
+          "lotSize1": 0.1515
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "WY",
+          "line1": "108 E LINCOLNWAY",
+          "line2": "CHEYENNE, WY 82001",
+          "locality": "Cheyenne",
+          "matchCode": "ExaStr",
+          "oneLine": "108 E LINCOLNWAY, CHEYENNE, WY 82001",
+          "postal1": "82001",
+          "postal2": "4513",
+          "postal3": "C003"
+        },
+        "location": {
+          "accuracy": "Street",
+          "elevation": 0,
+          "latitude": "41.133275",
+          "longitude": "-104.814156",
+          "distance": 0,
+          "geoid": "CO56021, CS5690715, DB5601980, PL5613900, SB0000130743, SB0000130744, SB0000130747, ZI82001"
+        },
+        "summary": {
+          "propclass": "Parking",
+          "propsubtype": "COMMERCIAL",
+          "proptype": "PARKING STRUCTURE",
+          "yearbuilt": 1918,
+          "propLandUse": "PARKING STRUCTURE",
+          "propIndicator": "31"
+        },
+        "building": {
+          "size": {
+            "universalsize": 7919
+          },
+          "rooms": {
+            "bathstotal": 0,
+            "beds": 0
+          }
+        },
+        "vintage": {
+          "lastModified": "2019-2-24",
+          "pubDate": "2019-8-11"
+        },
+        "sale": {
+          "salesearchdate": "2019-1-16",
+          "saleTransDate": "2019-1-16",
+          "amount": {
+            "saleamt": 0,
+            "salerecdate": "2019-1-17",
+            "saledisclosuretype": 2,
+            "saledocnum": "0000745870",
+            "saletranstype": "Resale"
+          },
+          "calculation": {
+            "priceperbed": 0,
+            "pricepersizeunit": 0
+          }
+        }
+      },
+      {
+        "identifier": {
+          "obPropId": 20149681656021,
+          "fips": "56021",
+          "apn": "17012000300080",
+          "attomId": 201496816
+        },
+        "lot": {
+          "lotSize1": 0.2697
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "WY",
+          "line1": "106 E LINCOLNWAY",
+          "line2": "CHEYENNE, WY 82001",
+          "locality": "Cheyenne",
+          "matchCode": "ExaStr",
+          "oneLine": "106 E LINCOLNWAY, CHEYENNE, WY 82001",
+          "postal1": "82001",
+          "postal2": "4535",
+          "postal3": "C003"
+        },
+        "location": {
+          "accuracy": "Street",
+          "elevation": 0,
+          "latitude": "41.133265",
+          "longitude": "-104.814179",
+          "distance": 0,
+          "geoid": "CO56021, CS5690715, DB5601980, PL5613900, SB0000130743, SB0000130744, SB0000130747, ZI82001"
+        },
+        "summary": {
+          "propclass": "Service (general public)",
+          "propsubtype": "COMMERCIAL",
+          "proptype": "CARWASH",
+          "yearbuilt": 1986,
+          "propLandUse": "CARWASH",
+          "propIndicator": "26"
+        },
+        "building": {
+          "size": {
+            "universalsize": 625
+          },
+          "rooms": {
+            "bathstotal": 0,
+            "beds": 0
+          }
+        },
+        "vintage": {
+          "lastModified": "2020-2-21",
+          "pubDate": "2020-2-21"
+        },
+        "sale": {
+          "salesearchdate": "2020-1-24",
+          "saleTransDate": "2020-1-24",
+          "amount": {
+            "saleamt": 0,
+            "salerecdate": "2020-1-24",
+            "saledisclosuretype": 2,
+            "saledocnum": "0000770075",
+            "saletranstype": "Resale"
+          },
+          "calculation": {
+            "priceperbed": 0,
+            "pricepersizeunit": 0
+          }
+        }
+      },
+      {
+        "identifier": {
+          "obPropId": 19065844356021,
+          "fips": "56021",
+          "apn": "11001033200080",
+          "attomId": 190658443
+        },
+        "lot": {
+          "lotSize1": 0.0731
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "WY",
+          "line1": "600 W 18TH ST",
+          "line2": "CHEYENNE WY 82001",
+          "locality": "Cheyenne",
+          "matchCode": "ExaZip",
+          "oneLine": "600 W 18TH ST, CHEYENNE WY 82001",
+          "postal1": "82001"
+        },
+        "location": {
+          "accuracy": "Zip5",
+          "elevation": 0,
+          "latitude": "41.132904",
+          "longitude": "-104.821297",
+          "distance": 0,
+          "geoid": "CO56021, CS5690715, DB5601980, PL5613900, RS0004947119, SB0000130743, SB0000130744, SB0000130747, ZI82001"
+        },
+        "summary": {
+          "propclass": "Vacant",
+          "propsubtype": "RESIDENTIAL",
+          "proptype": "COMMERCIAL ACREAGE",
+          "yearbuilt": 0,
+          "propLandUse": "COMMERCIAL ACREAGE",
+          "propIndicator": "80"
+        },
+        "building": {
+          "size": {
+            "universalsize": 0
+          },
+          "rooms": {
+            "bathstotal": 0,
+            "beds": 0
+          }
+        },
+        "vintage": {
+          "lastModified": "2020-6-19",
+          "pubDate": "2020-6-19"
+        },
+        "sale": {
+          "salesearchdate": "2020-4-10",
+          "saleTransDate": "2020-4-10",
+          "amount": {
+            "saleamt": 0,
+            "salerecdate": "2020-4-16",
+            "saledisclosuretype": 2,
+            "saledocnum": "0000775996",
+            "saletranstype": "Resale"
+          },
+          "calculation": {
+            "priceperbed": 0,
+            "pricepersizeunit": 0
+          }
+        }
+      },
+      {
+        "identifier": {
+          "obPropId": 19785531956021,
+          "fips": "56021",
+          "apn": "14405000000070",
+          "attomId": 197855319
+        },
+        "lot": {
+          "lotSize1": 0.3734
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "WY",
+          "line1": "1112 DUNN AVE",
+          "line2": "CHEYENNE, WY 82001",
+          "locality": "Cheyenne",
+          "matchCode": "ExaStr",
+          "oneLine": "1112 DUNN AVE, CHEYENNE, WY 82001",
+          "postal1": "82001",
+          "postal2": "4835",
+          "postal3": "C024"
+        },
+        "location": {
+          "accuracy": "Street",
+          "elevation": 0,
+          "latitude": "41.134433",
+          "longitude": "-104.797110",
+          "distance": 0,
+          "geoid": "CO56021, CS5690715, DB5601980, PL5613900, SB0000130743, SB0000130744, SB0000130747, ZI82001"
+        },
+        "summary": {
+          "propclass": "Service (general public)",
+          "propsubtype": "COMMERCIAL",
+          "proptype": "AUTO REPAIR",
+          "yearbuilt": 1974,
+          "propLandUse": "AUTO REPAIR",
+          "propIndicator": "26"
+        },
+        "building": {
+          "size": {
+            "universalsize": 7620
+          },
+          "rooms": {
+            "bathstotal": 0,
+            "beds": 0
+          }
+        },
+        "vintage": {
+          "lastModified": "2018-1-27",
+          "pubDate": "2019-8-11"
+        },
+        "sale": {
+          "salesearchdate": "2014-5-16",
+          "saleTransDate": "2014-5-16",
+          "amount": {
+            "saleamt": 0,
+            "salerecdate": "2014-5-19",
+            "saledisclosuretype": 2,
+            "saledocnum": "0000638076",
+            "saletranstype": "Resale"
+          },
+          "calculation": {
+            "priceperbed": 0,
+            "pricepersizeunit": 0
+          }
+        }
+      }
+    ]
+  }
+  
+  
+  
