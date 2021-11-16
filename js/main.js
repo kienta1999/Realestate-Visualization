@@ -125,12 +125,9 @@ function draw_map(values) {
                 .text(`Median Home Value: $${price.substring(0,3)},${price.substring(3)}`);
         })
         .on("mouseout", function(d) {
-            svg.selectAll('.state_name').remove();
-            svg.selectAll('.state_price').remove();
             return d3.select(this).attr("fill", d => colorScale(d.properties.MedianValue));
         })
         .on("click", clicked);
-
 
     g.append("path")
         .datum(topojson.mesh(topoData, topoData.objects.states, function(a, b) { return a !== b; }))
@@ -138,6 +135,23 @@ function draw_map(values) {
         .attr("d", path);
 
     function clicked(d) {
+        let name = d3.select(this).attr("class");
+        let price = d3.select(this).attr("id").toString();
+
+        svg.selectAll('.state_name').remove();
+        svg.append('text')
+            .attr('class','state_name')
+            .attr("x", 20)
+            .attr('y', height - 20)
+            .text(name);
+
+        svg.selectAll('.state_price').remove();
+        svg.append('text')
+            .attr('class','state_price')
+            .attr("x", width / 2)
+            .attr('y', height - 20)
+            .text(`Median Home Value: $${price.substring(0,3)},${price.substring(3)}`);
+                
         if (d3.select('.background').node() === this) return reset();
 
         if (active.node() === this) return reset();
@@ -157,8 +171,10 @@ function draw_map(values) {
             .duration(750)
             .style("stroke-width", 1.5 / scale + "px")
             .attr("transform", "translate(" + translate + ")scale(" + scale + ")");
-    }
 
+        let state_median_prices = [];
+        createLineChart(name, state_median_prices);
+    }
 
     function reset() {
         active.classed("active", false);
@@ -171,4 +187,8 @@ function draw_map(values) {
             .attr('transform', 'translate('+margin.left+','+margin.top+')');
 
     }
+}
+
+function createLineChart(state_name, state_median_prices) {
+    let lineChart = new LineChart(state_name, state_median_prices);
 }
