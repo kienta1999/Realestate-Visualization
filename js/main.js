@@ -18,6 +18,7 @@ function init() {
     Promise.all([
         d3.json("data/median_home_price.json"),
         d3.json("data/us-10m.json"),
+        d3.json("data/state_median_price.json"),
     ]).then(function (values) {
         let spinner = new Spinner(opts).spin(us_map);
         setTimeout(function() {
@@ -39,7 +40,7 @@ function showPage() {
 }
 
 function draw_map(values) {
-    const [houseData, topoData] = values;
+    const [houseData, topoData, stateMedianPriceData] = values;
     var margin = {top: 10, bottom: 10, left: 10, right:10},
         width = parseInt(d3.select('#US-map').style('width')) - margin.left - margin.right, 
         height = 550,
@@ -173,6 +174,7 @@ function draw_map(values) {
             .attr("transform", "translate(" + translate + ")scale(" + scale + ")");
 
         let state_median_prices = [];
+        console.log(stateMedianPriceData.find(d => d.state === "TN"));
         createLineChart(name, state_median_prices);
     }
 

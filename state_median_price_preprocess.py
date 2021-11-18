@@ -1,5 +1,6 @@
 import pandas as pd
 import json
+import us
 
 data = pd.read_csv('data/state_median_price.csv')
 # house_price = data[data.columns[5:]]
@@ -13,7 +14,7 @@ json_states = []
 for state in states:
     house_price_per_state = data[data['StateName'] == state]
     json_state = {}
-    json_state['state'] = state
+    json_state['state'] = us.states.lookup(state).name
     json_state['median_price'] = []
     for i in range(house_price_per_state.shape[0]):
         house_price_per_city = house_price_per_state.iloc[i]
