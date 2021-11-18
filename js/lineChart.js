@@ -36,5 +36,16 @@ LineChart.prototype.displayLineChart = function () {
 		.attr("x", 10)
 		.text(self.state_name)
 
-	console.log(self.state_name);
+    let cities_median_prices = self.state_median_prices.median_price;
+
+    const dropdown = d3.select("#state_cities");
+    dropdown.selectAll('.state_cities_option').remove();
+    dropdown
+        .selectAll(".state_cities_option")
+        .data(cities_median_prices)
+        .enter()
+        .append("option")
+        .classed("state_cities_option", true)
+        .attr("value", (d) => d.city)
+        .html((d) => d.city);
 };

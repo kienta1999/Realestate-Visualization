@@ -173,8 +173,7 @@ function draw_map(values) {
             .style("stroke-width", 1.5 / scale + "px")
             .attr("transform", "translate(" + translate + ")scale(" + scale + ")");
 
-        let state_median_prices = [];
-        console.log(stateMedianPriceData.find(d => d.state === "TN"));
+        let state_median_prices = stateMedianPriceData.find(d => d.state === name);
         createLineChart(name, state_median_prices);
     }
 
@@ -187,7 +186,6 @@ function draw_map(values) {
             .duration(750)
             .style("stroke-width", "1.5px")
             .attr('transform', 'translate('+margin.left+','+margin.top+')');
-
     }
 }
 
