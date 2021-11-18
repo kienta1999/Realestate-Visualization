@@ -84,11 +84,11 @@ function draw_map(values) {
         .selectAll("path")
         .data(us_counties)
         .enter().append("path")
+        .attr("class", d => `county-boundary ${d.properties.name}`)
         .attr("stroke", "#333")
         .attr("stroke-width", "0.5px")
         .attr("fill", "rgb(255, 245, 245)")
         .attr("d", path)
-        .attr("class", "county-boundary")
         .on("click", reset);
 
     // ------------------------------ DRAW STATES BOUNDARY ------------------------------
@@ -152,6 +152,9 @@ function draw_map(values) {
             .attr("x", width / 2)
             .attr('y', height - 20)
             .text(`Median Home Value: $${price.substring(0,3)},${price.substring(3)}`);
+
+        d3.select('#state-name-display')
+            .text(name);
                 
         if (d3.select('.background').node() === this) return reset();
 

@@ -12,7 +12,7 @@ body {
     float:left;
 }
 
-.state_name, .state_price, .state-name {
+.state_name, .state_price, .state-name, #state-name-display {
     font-size: 1.5em;
 }
 
@@ -21,7 +21,7 @@ body {
     pointer-events: all;
 }
 
-#states {
+#states, #counties {
     cursor: pointer;
 }
 
