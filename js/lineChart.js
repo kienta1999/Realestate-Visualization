@@ -4,7 +4,7 @@ function LineChart(state_name, state_median_prices){
     self.state_median_prices = state_median_prices;
     self.state_median_prices.median_price.forEach(data => {
         data.price.forEach(d => {
-            d.date = d3.timeParse("%Y-%m-%d")(d.date);
+            d.dateTransformed = d3.timeParse("%Y-%m-%d")(d.date);
         });
     });
     
@@ -48,8 +48,35 @@ LineChart.prototype.displayLineChart = function () {
     let firstSelectedCity = cities_median_prices[0].city;
     let firstSelectedData = cities_median_prices[0].price;
 
+    self.drawLineChart(firstSelectedCity, firstSelectedData);
+
+    dropdown.on("change", (event) => {
+        let selectedCity = dropdown.node().value;
+        let selectedData = cities_median_prices.find(d => d.city === selectedCity).price;
+
+        self.svg.selectAll('.x-axis').remove();
+        self.svg.selectAll('.y-axis').remove();
+        self.svg.selectAll('.price-line').remove();
+        self.svg.selectAll('.mouse-per-line circle').remove();
+        self.svg.selectAll('.mouse-per-line text').remove();
+        self.svg.selectAll('.mouse-line').remove();
+
+        self.drawLineChart(selectedCity, selectedData);
+    });
+};
+
+LineChart.prototype.drawLineChart = function(name, data) {
+    var self = this;
+    self.svg.append("text")
+        .attr("x", 175)
+        .attr("y", self.margin.top)
+        .attr("dy", "0.1em")
+        .style("text-anchor", "end")
+        .text("Average Price ($)");
+
+    // Add X axis
     const xAxis = d3.scaleTime()
-            .domain(d3.extent(firstSelectedData, (d) => d.date))
+            .domain(d3.extent(data, (d) => d.dateTransformed))
             .range([ 0, self.svgWidth ])
 
     self.svg.append("g")
@@ -59,7 +86,7 @@ LineChart.prototype.displayLineChart = function () {
 
     // Add Y axis
     const yAxis = d3.scaleLinear()
-        .domain([0, d3.max(firstSelectedData, d => d.price)])
+        .domain([0, d3.max(data, d => d.price)])
         .range([ self.svgHeight, 0 ])
 
     self.svg.append("g")
@@ -68,55 +95,90 @@ LineChart.prototype.displayLineChart = function () {
 
     // Add the line
     self.svg.append("path")
-        .datum(firstSelectedData)
+        .datum(data)
         .attr("fill", "none")
-        .attr("class", "price-line")
+        .attr("class", "line price-line")
         .attr("stroke", "steelblue")
         .attr("stroke-width", 1.5)
         .attr("d", d3.line()
-                .x(d => xAxis(d.date))
+                .x(d => xAxis(d.dateTransformed))
                 .y(d => yAxis(d.price))
             )
 
-    dropdown.on("change", (event) => {
-        let selectedCity = dropdown.node().value;
-        let selectedData = cities_median_prices.find(d => d.city === selectedCity).price;
+    var mouseG = self.svg.append("g")
+        .attr("class", "mouse-over-effects");
 
-        console.log(selectedCity);
-        console.log(selectedData);
+    mouseG.append("path") // this is the black vertical line to follow mouse
+        .attr("class", "mouse-line")
+        .style("stroke", "black")
+        .style("stroke-width", "1px")
+        .style("opacity", "0");
+      
+    var lines = document.getElementsByClassName('line');
 
-        self.svg.selectAll('.x-axis').remove();
-        self.svg.selectAll('.y-axis').remove();
-        self.svg.selectAll('.price-line').remove();
+    var mousePerLine = mouseG.selectAll('.mouse-per-line')
+        .data(data)
+        .enter()
+        .append("g")
+        .attr("class", "mouse-per-line");
 
-        const xAxis = d3.scaleTime()
-            .domain(d3.extent(selectedData, (d) => d.date))
-            .range([ 0, self.svgWidth ])
+    mousePerLine.append("circle")
+        .attr("r", 7)
+        .attr('class', 'circle')
+        .style("stroke", "gray")
+        .style("fill", "none")
+        .style("stroke-width", "1px")
+        .style("opacity", "0");
 
-        self.svg.append("g")
-            .attr("transform", `translate(0, ${self.svgHeight})`)
-            .attr("class", "x-axis")
-            .call(d3.axisBottom(xAxis))
+    mousePerLine.append("text")
+        .attr("transform", "translate(10,3)");
 
-        // Add Y axis
-        const yAxis = d3.scaleLinear()
-            .domain([0, d3.max(selectedData, d => d.price)])
-            .range([ self.svgHeight, 0 ])
+    mouseG.append('svg:rect') // append a rect to catch mouse movements on canvas
+        .attr('width', self.svgWidth) // can't catch mouse events on a g element
+        .attr('height', self.svgHeight)
+        .attr('fill', 'none')
+        .attr('pointer-events', 'all')
+        .on('mouseout', function() { // on mouse out hide line, circles and text
+            d3.select(".mouse-line").style("opacity", "0");
+            d3.selectAll(".mouse-per-line circle").style("opacity", "0");
+            d3.selectAll(".mouse-per-line text").style("opacity", "0");
+        })
+        .on('mouseover', function() { // on mouse in show line, circles and text
+            d3.select(".mouse-line").style("opacity", "1");
+            d3.selectAll(".mouse-per-line circle").style("opacity", "1");
+            d3.selectAll(".mouse-per-line text").style("opacity", "1");
+        })
+        .on('mousemove', function() { // mouse moving over canvas
+            var mouse = d3.mouse(this);
+            d3.select(".mouse-line")
+            .attr("d", function() {
+                var d = "M" + mouse[0] + "," + self.svgHeight;
+                d += " " + mouse[0] + "," + 0;
+                return d;
+            });
 
-        self.svg.append("g")
-            .attr("class", "y-axis")
-            .call(d3.axisLeft(yAxis))
+            d3.selectAll(".mouse-per-line").attr("transform", function(d, i) {
+                var beginning = 0,
+                    end = lines[i].getTotalLength(),
+                    target = null;
 
-        // Add the line
-        self.svg.append("path")
-            .datum(selectedData)
-            .attr("fill", "none")
-            .attr("class", "price-line")
-            .attr("stroke", "steelblue")
-            .attr("stroke-width", 1.5)
-            .attr("d", d3.line()
-                    .x(d => xAxis(d.date))
-                    .y(d => yAxis(d.price))
-                )
-    });
-};
+                while (true){
+                    target = Math.floor((beginning + end) / 2);
+                    pos = lines[i].getPointAtLength(target);
+                    if ((target === end || target === beginning) && pos.x !== mouse[0]) {
+                        break;
+                    }
+                    if (pos.x > mouse[0])
+                        end = target;
+                    else if (pos.x < mouse[0])
+                        beginning = target;
+                    else
+                        break; //position found
+                }
+                
+                d3.select(this).select('text')
+                    .text(yAxis.invert(pos.y).toFixed(2));
+                return "translate(" + mouse[0] + "," + pos.y +")";
+            });
+      });
+}
