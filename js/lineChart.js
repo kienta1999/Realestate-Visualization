@@ -1,5 +1,5 @@
 function LineChart(state_name, state_median_prices){
-    var self = this;
+    let self = this;
     self.state_name = state_name;
     self.state_median_prices = state_median_prices;
     self.state_median_prices.median_price.forEach(data => {
@@ -17,7 +17,7 @@ LineChart.prototype.init = function(){
     self.svgWidth = parseInt(d3.select('#line-chart').style('width')) - self.margin.left - self.margin.right;
     self.svgHeight = 400;
 
-    var divLineChart = d3.select("#line-chart").html("");
+    let divLineChart = d3.select("#line-chart").html("");
 
     //creates svg element within the div
     self.svg = divLineChart.append("svg")
@@ -30,7 +30,7 @@ LineChart.prototype.init = function(){
 };
 
 LineChart.prototype.displayLineChart = function () {
-	var self = this;
+	let self = this;
 
     let cities_median_prices = self.state_median_prices.median_price;
 
@@ -57,8 +57,10 @@ LineChart.prototype.displayLineChart = function () {
         self.svg.selectAll('.x-axis').remove();
         self.svg.selectAll('.y-axis').remove();
         self.svg.selectAll('.price-line').remove();
-        self.svg.selectAll('.mouse-per-line circle').remove();
-        self.svg.selectAll('.mouse-per-line text').remove();
+        self.svg.selectAll('.mouse-per-line').remove();
+        self.svg.selectAll('.circle').remove();
+        self.svg.selectAll('.mouse-per-line').remove();
+        self.svg.selectAll('.text').remove();
         self.svg.selectAll('.mouse-line').remove();
 
         self.drawLineChart(selectedCity, selectedData);
@@ -66,7 +68,7 @@ LineChart.prototype.displayLineChart = function () {
 };
 
 LineChart.prototype.drawLineChart = function(name, data) {
-    var self = this;
+    let self = this;
     self.svg.append("text")
         .attr("x", 175)
         .attr("y", self.margin.top)
@@ -105,7 +107,7 @@ LineChart.prototype.drawLineChart = function(name, data) {
                 .y(d => yAxis(d.price))
             )
 
-    var mouseG = self.svg.append("g")
+    let mouseG = self.svg.append("g")
         .attr("class", "mouse-over-effects");
 
     mouseG.append("path") // this is the black vertical line to follow mouse
@@ -114,9 +116,9 @@ LineChart.prototype.drawLineChart = function(name, data) {
         .style("stroke-width", "1px")
         .style("opacity", "0");
       
-    var lines = document.getElementsByClassName('line');
+    let lines = document.getElementsByClassName('line');
 
-    var mousePerLine = mouseG.selectAll('.mouse-per-line')
+    let mousePerLine = mouseG.selectAll('.mouse-per-line')
         .data(data)
         .enter()
         .append("g")
@@ -149,16 +151,16 @@ LineChart.prototype.drawLineChart = function(name, data) {
             d3.selectAll(".mouse-per-line text").style("opacity", "1");
         })
         .on('mousemove', function() { // mouse moving over canvas
-            var mouse = d3.mouse(this);
+            let mouse = d3.mouse(this);
             d3.select(".mouse-line")
             .attr("d", function() {
-                var d = "M" + mouse[0] + "," + self.svgHeight;
+                let d = "M" + mouse[0] + "," + self.svgHeight;
                 d += " " + mouse[0] + "," + 0;
                 return d;
             });
 
             d3.selectAll(".mouse-per-line").attr("transform", function(d, i) {
-                var beginning = 0,
+                let beginning = 0,
                     end = lines[i].getTotalLength(),
                     target = null;
 
@@ -173,11 +175,11 @@ LineChart.prototype.drawLineChart = function(name, data) {
                     else if (pos.x < mouse[0])
                         beginning = target;
                     else
-                        break; //position found
+                        break;
                 }
                 
                 d3.select(this).select('text')
-                    .text(yAxis.invert(pos.y).toFixed(2));
+                    .text(new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(yAxis.invert(pos.y).toFixed(2)));
                 return "translate(" + mouse[0] + "," + pos.y +")";
             });
       });

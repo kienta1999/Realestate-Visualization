@@ -5,11 +5,11 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="css/processBook.css" />
-        <title>Milestone 1: Process Book</title>
+        <title>Process Book</title>
     </head>
     <body>
         <header>
-            <h2>Milestone 1: Process Book</h2>
+            <h2>Process Book</h2>
             <p class="info">Name: Anh Le; E-Mail: a.v.le@wustl.edu; UID: 488493&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Name: Kien Ta; E-Mail: k.l.ta@wustl.edu; UID: 488494</p>
             <hr>
         </header>
@@ -75,6 +75,10 @@
                     - We used basic plot (scatter plot and bar chart) to visualize the correlation of features like house size, age vs house price to get an insight of how the data looks like.
                     It seems to me that the bigger the size, the more expensive the house is (given the similar location). Similarly, the lower the age, the more expensive the house is.
                 </p>
+                <p>
+                    - We were able to write python script to crawl data from redfin and will start working with implementing specific housing prices in upcoming weeks. Also, we utilized Zillow
+                    median house prices based on states and cities to implement a line graph chart displaying average house price in selected cities throughout the years.
+                </p>
             </li>
 
             <li>
@@ -110,6 +114,14 @@
                             <img width="100%" src="images/california.png" alt="hompeage_heatmap">
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col">
+                            <img width="100%" src="./Project Proposal/images/linechart.png" alt="hompeage_heatmap">
+                        </div>
+                        <div class="col">
+                            <img width="100%" src="images/linechart.png" alt="hompeage_heatmap">
+                        </div>
+                    </div>
                 </p>
             </li>
 
@@ -119,6 +131,12 @@
                     We have finished creating an interactive map for user's to hover over the map to get average housing price in the United States. Moverover, clicking onto a 
                     selected state will zoom in and in order to zoom out, user would simply need to click the state again. Here is a quick demo: <br>
                     <img width="50%" src="images/demo.gif" alt="map_demo">
+                </p>
+                <p>
+                    Moreover, we have decided to move the linechart to the right and eliminate to select state in the dropdown button. Now, when user selects a state on the map,
+                    we will give them some common cities in that selected state to choose from in the dropdown list. A vertical line and price display based on time is shown as
+                    well. Future implementation will include zooming if we have time.<br>
+                    <img width="50%" src="images/demo2.gif" alt="map_demo">
                 </p>
             </li>
 
