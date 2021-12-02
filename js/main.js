@@ -19,6 +19,7 @@ function init() {
         d3.json("data/median_home_price.json"),
         d3.json("data/us-10m.json"),
         d3.json("data/state_median_price.json"),
+        d3.csv("data/final_data.csv"),
     ]).then(function (values) {
         let spinner = new Spinner(opts).spin(us_map);
         setTimeout(function() {
@@ -40,7 +41,7 @@ function showPage() {
 }
 
 function draw_map(values) {
-    const [houseData, topoData, stateMedianPriceData] = values;
+    const [houseData, topoData, stateMedianPriceData, houseListingData] = values;
     var margin = {top: 10, bottom: 10, left: 10, right:10},
         width = parseInt(d3.select('#US-map').style('width')) - margin.left - margin.right, 
         height = 550,
@@ -178,6 +179,7 @@ function draw_map(values) {
 
         let state_median_prices = stateMedianPriceData.find(d => d.state === name);
         createLineChart(name, state_median_prices);
+        createHouseListing(name, houseListingData);
     }
 
     function reset() {
@@ -194,4 +196,8 @@ function draw_map(values) {
 
 function createLineChart(state_name, state_median_prices) {
     let lineChart = new LineChart(state_name, state_median_prices);
+}
+
+function createHouseListing(state_name, house_listing_data) {
+    let houseListing = new HouseListing(state_name, house_listing_data);
 }
