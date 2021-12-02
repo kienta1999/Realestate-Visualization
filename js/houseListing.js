@@ -81,9 +81,60 @@ function HouseListing(state_name, house_listing_data){
 
 HouseListing.prototype.init = function(){
     let self = this;
-    self.margin = {top: 10, bottom: 30, left: 60, right:60};
-    self.svgWidth = parseInt(d3.select('#line-chart').style('width')) - self.margin.left - self.margin.right;
-    self.svgHeight = 400;
 
-    let divLineChart = d3.select("#house-listing").html("");
+    for (let i = 0; i < 15; i++) {
+        let housediv = d3.select(`#house${i+1}`).html("");
+
+        let margin = {top: 10, bottom: 10, left: 10, right:10};
+        let svgWidth = parseInt(d3.select(`#house${i+1}`).style('width')) - margin.left - margin.right;
+        let svgHeight = 250;
+
+        let housei = self.house_listing_data[i];
+
+        console.log(housei);
+
+        let svg = housediv.append("svg")
+            .attr("width", svgWidth + margin.left + margin.right)
+            .attr("height", svgHeight + margin.top + margin.bottom);
+
+        svg.append("svg:image")
+            .attr('x', -60)
+            .attr('y', 0)
+            .attr('width', "100%")
+            .attr('height', "150")
+            .attr("xlink:href", housei.img_href.split(" ")[0])
+
+        svg.append("text")
+            .attr("x", 0)
+            .attr("y", 150 + 10*2.5)
+            .style("font-size", "1em")
+            .attr("fill", "steel")
+            .attr("font-weight", "bolder")
+            .style("text-anchor", "start")
+            .text(new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(housei.price));
+
+        svg.append("text")
+            .attr("x", 0)
+            .attr("y", 150 + 10*5)
+            .style("font-size", "0.9em")
+            .attr("fill", "steelBlue")
+            .style("text-anchor", "start")
+            .text(housei.stress_address);
+    
+        svg.append("text")
+            .attr("x", 0)
+            .attr("y", 150 + 10*7)
+            .style("font-size", "0.9em")
+            .attr("fill", "steelBlue")
+            .style("text-anchor", "start")
+            .text(`${housei.city}, ${housei.state} ${housei.zip}`);
+
+        svg.append("text")
+            .attr("x", 0)
+            .attr("y", 150 + 10*9.5)
+            .style("font-size", "0.7em")
+            .attr("fill", "gray")
+            .style("text-anchor", "start")
+            .text(`${housei.beds} bed(s), ${housei.bath} bath(s)`);
+    }
 };

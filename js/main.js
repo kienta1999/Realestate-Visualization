@@ -44,7 +44,7 @@ function draw_map(values) {
     const [houseData, topoData, stateMedianPriceData, houseListingData] = values;
     var margin = {top: 10, bottom: 10, left: 10, right:10},
         width = parseInt(d3.select('#US-map').style('width')) - margin.left - margin.right, 
-        height = 550,
+        height = 515,
         active = d3.select(null);
 
     let color_range = ["#D3E4F3", "#BDD8EC", "#A0CAE3", "#7EB8DA", "#5DA4D0", "#408EC4", "#1460A7", "#0A488D", "#08306B"];
