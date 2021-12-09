@@ -101,6 +101,7 @@ function HouseListing(state_name, house_listing_data){
 
 HouseListing.prototype.init = function(){
     let self = this;
+    d3.select("#page-number").text(self.page);
     d3.select('#house-page').classed("hidden", false);
 
     for (let i = 0; i < self.page_size; i++) {
