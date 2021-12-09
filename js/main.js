@@ -137,6 +137,7 @@ function draw_map(values) {
         .attr("d", path);
 
     function clicked(d) {
+        d3.select("#state_cities_wrapper").classed("hidden", false);
         let name = d3.select(this).attr("class");
         let price = d3.select(this).attr("id").toString();
 
