@@ -75,23 +75,43 @@ function HouseListing(state_name, house_listing_data){
     self.state_abbr = abbrState(self.state_name, 'abbr');
 
     self.house_listing_data = house_listing_data.filter(d => d.state === self.state_abbr);
+    self.page = 1;
+    self.page_size = 15;
     
     self.init();
+    d3.select("#previous-btn").on("click", () => {
+        if(self.page == 1){
+            return;
+        }
+        self.page -= 1;
+        d3.select("#page-number").text(self.page);
+        self.init();
+    });
+
+    d3.select("#next-btn").on("click", () => {
+        if((self.page + 1) * self.page_size >= self.house_listing_data.length){
+            return;
+        }
+        self.page += 1;
+        d3.select("#page-number").text(self.page);
+        self.init();
+    });
+
 };
 
 HouseListing.prototype.init = function(){
     let self = this;
+    d3.select('#house-page').classed("hidden", false);
 
-    for (let i = 0; i < 15; i++) {
+    for (let i = 0; i < self.page_size; i++) {
+        let j = i + (self.page - 1) * self.page_size;
         let housediv = d3.select(`#house${i+1}`).html("");
-
         let margin = {top: 10, bottom: 10, left: 10, right:10};
+        console.log(d3.select(`#house${i+1}`));
         let svgWidth = parseInt(d3.select(`#house${i+1}`).style('width')) - margin.left - margin.right;
         let svgHeight = 250;
 
-        let housei = self.house_listing_data[i];
-
-        console.log(housei);
+        let housei = self.house_listing_data[j];
 
         let svg = housediv.append("svg")
             .attr("width", svgWidth + margin.left + margin.right)
