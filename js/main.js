@@ -74,7 +74,7 @@ function draw_map(values) {
 
     var g = svg.append("g")
         .attr('class', 'center-container center-items us-state')
-        .attr('transform', 'translate('+margin.left+','+margin.top+')')
+        .attr('transform', 'translate('+margin.left+', '+margin.top+') scale(1,1)')
         .attr('width', width + margin.left + margin.right)
         .attr('height', height + margin.top + margin.bottom)
 
@@ -108,6 +108,9 @@ function draw_map(values) {
         })
         .attr("d", path)
         .on("mouseover", function(d) {
+            if(g.attr('transform') != "translate(10, 10) scale(1,1)"){
+                return;
+            }
             let name = d3.select(this).attr("class");
             let price = d3.select(this).attr("id").toString();
 
