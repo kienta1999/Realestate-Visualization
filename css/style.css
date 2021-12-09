@@ -12,7 +12,7 @@ body {
     float:left;
 }
 
-.state_name, .state_price, .state-name, #state-name-display {
+.state_name, .state_price, .state-name, #state-name-display, .page-number {
     font-size: 1.5em;
 }
 
@@ -70,4 +70,9 @@ img {
 
 .hidden {
     display: none;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
 }
