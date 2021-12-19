@@ -158,11 +158,12 @@ HouseListing.prototype.init = function(){
             .style("text-anchor", "start")
             .text(`${housei.beds} bed(s), ${housei.bath} bath(s)`);
         
-        housediv.on("click", () => {
-            console.log("clicked");
-            d3.select("#house-detail").classed("hidden", false);
-            // TODO: add house detail 
-        })
+        housediv.classed("house", true)
+                .on("click", () => {
+                    console.log("clicked");
+                    d3.select("#house-detail").classed("hidden", false);
+                    // TODO: add house detail 
+                })
     }
 };
 

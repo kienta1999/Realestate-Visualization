@@ -21,7 +21,7 @@ body {
     pointer-events: all;
 }
 
-#states, #counties, .circle {
+#states, #counties, .circle, .house {
     cursor: pointer;
 }
 
