@@ -11,6 +11,7 @@
         <header>
             <h2>A CLOSER LOOK AT REAL ESTATE</h2>
             <p class="info">Name: Anh Le; E-Mail: a.v.le@wustl.edu; UID: 488493&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Name: Kien Ta; E-Mail: k.l.ta@wustl.edu; UID: 488494</p>
+            <p class="info">Project Screencast <a href="https://drive.google.com/file/d/1QTqxnPusX9f32wKNHOIgaZdLsKwL6AUJ/view?usp=sharing">here</a></p>
         </header>
         
         <hr />
@@ -95,14 +96,6 @@
                     </div>
                 </div>
                 <div id="line-chart"></div>
-                <!-- <div class="row">
-                    <div class="col">
-                        <div id="house1"></div>
-                    </div>
-                    <div class="col">
-                        <div id="house2"></div>
-                    </div>
-                </div> -->
             </div>
         </div>
         <br /><br />
@@ -144,13 +137,21 @@
         </div>
 
         <div class="center hidden" id="house-detail">
-            <!-- TODO remove this random text-->
-            <p>House detail goes here</p>
-            <p>House detail goes here</p>
-            <p>House detail goes here</p>
-            <p>House detail goes here</p>
-            <p>House detail goes here</p>
-            <p>House detail goes here</p>
+            <div class="row">
+                <div class="col"><img id="expand_img1" src="images/california.png" alt="image1"></div>
+                <div class="col"><img id="expand_img2" src="images/california.png" alt="image2"></div>
+            </div>
+            <br>
+            <p id="box_price"></p>
+            <p id="box_address"></p>
+            <p id="box_area"></p>
+            <p id="box_bedbath"></p>
+            <p id="box_walkscore"></p>
+            <p id="box_min_wage"></p>
+            <p id="box_income"></p>
+            <p id="box_unemployment"></p>
+            <p id="box_crime_rate"></p>
+
             <button class="btn btn-danger" id="close-house-detail">X</button>
         </div>
 

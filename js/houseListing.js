@@ -108,7 +108,6 @@ HouseListing.prototype.init = function(){
         let j = i + (self.page - 1) * self.page_size;
         let housediv = d3.select(`#house${i+1}`).html("");
         let margin = {top: 10, bottom: 10, left: 10, right:10};
-        console.log(d3.select(`#house${i+1}`));
         let svgWidth = parseInt(d3.select(`#house${i+1}`).style('width')) - margin.left - margin.right;
         let svgHeight = 250;
 
@@ -160,9 +159,19 @@ HouseListing.prototype.init = function(){
         
         housediv.classed("house", true)
                 .on("click", () => {
-                    console.log("clicked");
+                    console.log("clicked", housei);
                     d3.select("#house-detail").classed("hidden", false);
-                    // TODO: add house detail 
+                    d3.select('#box_price').html(`Price: ${new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(housei.price)}`)
+                    d3.select('#box_address').html(`Address: ${housei.stress_address}, ${housei.city}, ${housei.state} ${housei.zip}`)
+                    d3.select('#box_area').html(`Area: ${housei.area} sqft - Year Built: ${housei.year_built}`)
+                    d3.select('#box_bedbath').html(`${housei.beds} bed(s), ${housei.bath} bath(s)`)
+                    d3.select('#box_walkscore').html(`Walk Score: ${housei.walk_score}/100, Bike Score: ${housei.bike_score}/100, Transit Score: ${housei.transit_score}/100`)
+                    d3.select('#expand_img1').attr("src", housei.img_href.split(" ")[0]);
+                    d3.select('#expand_img2').attr("src", housei.img_href.split(" ")[1]);
+                    d3.select('#box_min_wage').html(`Minimum wage in ${abbrState(housei.state, 'name')}: $${housei.minimum_wage}/hour`)
+                    d3.select('#box_income').html(`Median household income in ${housei.county}: ${new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(housei.median_household_income)}`)
+                    d3.select('#box_unemployment').html(`Unemployment rate in ${housei.county}: ${housei.unemployment_rate}`)
+                    d3.select('#box_crime_rate').html(`Crime rate per 100k people: ${housei.crime_rate_per_100000}`)
                 })
     }
 };
